@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "rust_lib_lnu_elytra",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

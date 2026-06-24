@@ -1,0 +1,28 @@
+[package]
+name = "rust_lib_lnu_elytra"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+flutter_rust_bridge = "=2.13.0-beta.1"
+lnu-elytra = { git = "https://github.com/mcitem/lnuElytra", features = [
+    "__flutter",
+    "cookie_override",
+    "tracing",
+] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", default-features = false, features = [
+    "registry",
+    "std",
+] }
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.22"
+ndk-context = "0.1"
+rustls-platform-verifier = "0.7"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(frb_expand)'] }
