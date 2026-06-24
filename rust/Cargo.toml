@@ -8,7 +8,7 @@ crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
 flutter_rust_bridge = "=2.13.0-beta.1"
-lnu-elytra = { git = "https://github.com/mcitem/lnuElytra", features = [
+lnu-elytra = { version = "=0.0.8", features = [
     "__flutter",
     "cookie_override",
     "tracing",

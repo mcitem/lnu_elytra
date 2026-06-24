@@ -1007,8 +1007,9 @@ checksum = "11d3d7f243d5c5a8b9bb5d6dd2b1602c0cb0b9db1621bafc7ed66e35ff9fe092"
 
 [[package]]
 name = "lnu-elytra"
-version = "0.0.7"
-source = "git+https://github.com/mcitem/lnuElytra#faa79d1611c976b0cb04c2415bc4ae67b9368694"
+version = "0.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34442439ea0eabf680ca485481ddf6f57636095a1d688410e8f88fa8103a395a"
 dependencies = [
  "base64",
  "delegate",
