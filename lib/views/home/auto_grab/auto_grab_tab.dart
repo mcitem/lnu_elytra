@@ -38,7 +38,7 @@ class _AutoGrabTabState extends State<AutoGrabTab>
   final List<_KeywordTask> _tasks = [];
 
   GrabStrategy _strategy = GrabStrategy.parallel;
-  JxbStrategy _jxbStrategy = JxbStrategy.sequential;
+  JxbStrategy _jxbStrategy = JxbStrategy.firstOnly;
   int _retryIntervalMs = 100;
 
   bool _running = false;

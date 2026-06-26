@@ -33,7 +33,7 @@ dependencies:
 
   rust_lib_lnu_elytra:
     path: rust_builder
-  flutter_rust_bridge: 2.13.0-beta.1
+  flutter_rust_bridge: 2.13.0-beta.2
 
   cupertino_icons:
     git:
@@ -43,6 +43,7 @@ dependencies:
     git:
       url: https://gitcode.com/openharmony-tpc/flutter_packages.git
       path: packages/url_launcher/url_launcher
+  aliyun_log_dart_sdk: ^1.1.8
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,19 @@
 {
   app: {
     signingConfigs: [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "D:/cert/hap-release.p12",
+          "storePassword": "00000019EF011C3AA8DE2375D2A34B707E6FACE0E22B4F28507BE1F820B5DC1092A20D5303D7E55062",
+          "keyAlias": "mcitem",
+          "keyPassword": "00000019CF2E558E664849D60CD89807FF1DA4E031EEAF78198BC47C878E797C18B4B0AE49A110AC64",
+          "signAlg": "SHA256withECDSA",
+          "profile": "D:/cert/hap-releaseRelease.p7b",
+          "certpath": "D:/cert/hap-release.cer"
+        }
+      }
     ],
     products: [
       {
